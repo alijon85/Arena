@@ -1,0 +1,10 @@
+# Byte-compiled / cache
+__pycache__/
+*.pyc
+
+# Local databases (contain real shop data on an actual install)
+*.db
+
+# OS files
+.DS_Store
+Thumbs.db

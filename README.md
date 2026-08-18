@@ -1,43 +1,47 @@
-Welcome to the Simple Accounting Software! This project is a straightforward yet powerful tool designed to help small businesses and individual users manage their accounting tasks with ease.
+# Arena
 
-📋 Key Features
+Desktop accounting and inventory software built for small retail shops, designed around real shop owners' request for something simple.
 
-Our software comes with several key sections, each serving a specific purpose for managing different aspects of your finances:
+## Features
 
-Inventory Management (انبار): Track and manage all of your products with real-time updates on stock levels.
+- **Inventory** (انبار) — track products and stock levels
+- **Store** (فروشگاه) — record sales and purchases
+- **Deposits** (واریزی‌ها) — log incoming payments
+- **Withdrawals** (برداشت‌ها) — record withdrawals
+- **Ledger accounts** (حساب‌های دفتری) — a digital ledger for auditing and tracking
+- **Settings** — font size/family, icon size, and password-protected access, all configurable from within the app
+- Persian (Jalali) calendar support throughout, matching how the shops using it actually track dates
 
-Store (فروشگاه): Handle your sales and purchases seamlessly. Keep detailed records of all transactions in one place.
+## Tech Stack
 
-Deposits (واریزی‌ها): Manage your incoming payments efficiently. Log every deposit and keep your accounts up-to-date.
+- **Language:** Python
+- **UI:** PyQt5
+- **Storage:** SQLite (local, per-install)
+- **Calendar:** [persiantools](https://pypi.org/project/persiantools/) for Jalali date handling
 
-Withdrawals (برداشت‌ها): Record and track any withdrawals made from your accounts with ease.
+## Installation
 
-Ledger Accounts (حساب‌های دفتری): Maintain a digital ledger for all your financial records, making tracking and auditing straightforward.
+```bash
+git clone https://github.com/Alidl81/Arena.git
+cd Arena
+pip install -r requirements.txt
+python ArenaSport.py
+```
 
-⚙️ Settings
+A packaged Windows installer is also available under `Arena Setup/`.
 
-Our software also includes a robust Settings page where users can customize various aspects of the application according to their preferences:
+## Usage
 
-Font Size Customization: Adjust the size of the text to make the interface more readable and comfortable for your eyes.
+Launch the app, set an access password on first run from Settings, then use the Inventory, Store, Deposits, Withdrawals, and Ledger tabs to manage day-to-day shop accounting. All data is stored locally in SQLite.
 
-Font Family Selection: Choose your preferred font style to enhance the visual appearance of the application.
+## Project Status
 
-Icon Size Adjustment: Modify the size of the icons to suit your screen size or visual preferences.
+Stable and in real-world use by several small retail shops. Not under active feature development.
 
-Password Management: Set, update, or change the password for accessing the application to ensure your data remains secure.
+## Notes
 
-🎨 Intuitive Design
+`*.db` files are intentionally excluded from version control — they hold real shop data on an actual install, not sample data.
 
-The software is designed with simplicity and usability in mind, ensuring that even users with minimal technical knowledge can navigate and use the system effectively. With a clean and organized interface, you can easily manage your accounting tasks without any hassle.
+## License
 
-🚀 How to Get Started
-
-Simply clone the repository and run the application! Our software is lightweight and runs smoothly on most devices, ensuring quick access to your accounting needs anytime, anywhere.
-
-🛡️ Security
-
-Your financial data is protected with a built-in password system that you can update or change whenever needed. Rest assured that your information is kept private and secure.
-
-Whether you’re running a small business or just need to keep track of your finances, Simple Accounting Software is here to simplify the process for you. Get started today and make your accounting tasks easier than ever!
-
-Feel free to reach out for support or contribute to the project by submitting pull requests or raising issues!
+No license file is currently included; treat as all-rights-reserved unless stated otherwise by the author.
